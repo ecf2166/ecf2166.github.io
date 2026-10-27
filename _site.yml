@@ -13,6 +13,8 @@ navbar:
       href: about.html
     - text: "Plotly"
       href: plotly.html
+    - text: "Dashboard"
+      href: dashboard.html
   right:
     - icon: fa-envelope fa-lg
       href: mailto:ecf2166@cumc.columbia.edu
