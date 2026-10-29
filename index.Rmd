@@ -1,26 +1,36 @@
 ---
-title: "My awesome website"
-output: 
+pagetitle: "Emma Fanuele"
+output:
   html_document:
-    toc: true
-    toc_float: true
-    theme: cerulean
+    toc: false
 ---
 
-# This is Jeff's awesome website
+<style>
+.hero-name { font-size: 40px; font-weight: 700; color: #2C3E50; margin: 25px 0 4px 0; }
+.hero-tagline { font-size: 18px; color: #555; margin-bottom: 4px; }
+.hero-focus { font-size: 15px; font-weight: 600; color: #18BC9C; margin-bottom: 25px; }
+.headshot { width: 260px; max-width: 70%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center 15%; border-radius: 50%; box-shadow: 0 4px 14px rgba(0,0,0,0.15); }
+</style>
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif) 
+<div class="hero-name">Emma Fanuele</div>
+<div class="hero-tagline">MPH Candidate in Epidemiology (Biostatistics cerificate) · Columbia University Mailman School of Public Health</div>
 
-You can write content. this can be whatever you want to say to the whole world!
+<div class="text-center">
+<img src="images/headshot.jpeg" class="headshot">
+</div>
 
-I learned all of my data science from [P8105](https://p8105.com/index.html)!
+## About
 
-To learn about this page, go [here](about.html)
+I am a second-year MPH student in Epidemiology with a certificate in Applied Biostatistics and Public Health Data Science at Columbia University. I started this journey at McGill University, where I majored in Environment with a concentration in Ecological Determinants of Health in Society and minors in Statistics and Field Studies.
 
-# Some other stuff that's really cool
+While at Columbia, I have really fallen in love with biostatistics. Partaking in research outside of my immediate interests has demonstrated that what I love is the story the numbers tell, no matter the subject matter. I want others to have this love as well, which led me to become a Teaching Assistant for Quantitative Methods of Public Health at Mailman. I loved how the courses I took for my statistics minor in undergrad challenged me, and have carried this knowledge into my applied biostatistics courses.
 
-Here's a really cool picture that I took: 
+Recently, I have also embraced my interest in gastroenterological research by getting involved with GI research at Columbia, and I hope to continue pursuing this interest in my future career. I have also done research on antimicrobial resistance, often called the "silent pandemic," which I am now extending into my master's thesis.
 
-<img src="images/IMG_2869.jpeg" style="width:75%">
+I am graduating in May 2027 and am seeking biostatistics roles in pharma and biotech. You can find my [research](research.html), [projects](projects.html), [publications](publications.html), and [CV](cv.html) on this site, and a bit more about me outside of work [here](about.html).
 
-Another cool thing is scatterlots. Check this [out](plots.html).
+## Contact
+
+Emma Fanuele  
+[ecf2166@cumc.columbia.edu](mailto:ecf2166@cumc.columbia.edu)  
+[LinkedIn](https://www.linkedin.com/in/emma-fanuele/) · [GitHub](https://github.com/ecf2166)

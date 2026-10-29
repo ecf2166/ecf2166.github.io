@@ -1,0 +1,31 @@
+---
+title: "CV"
+output:
+  html_document:
+    toc: false
+---
+
+<a class="btn btn-primary" href="files/Emma_Fanuele_CV.pdf" download>Download CV (PDF)</a>
+
+## Education
+
+**Columbia University Mailman School of Public Health**: MPH, Epidemiology; Certificate in Applied Biostatistics and Public Health Data Science (expected May 2027)  
+*Coursework:* Applied Regression I–II, Analysis of Categorical Data, Introduction to Randomized Controlled Trials, Epidemiology II–III
+
+**McGill University**: BA, Honours in Environment (Ecological Determinants of Health in Society); Minors in Statistics and Field Studies (2025)  
+*First-Class Honours; Dean's Honour List all four years*
+
+## Skills
+
+**Programming:** R (advanced), SAS incl. SUDAAN (intermediate), Python (foundational), SQL (foundational), LaTeX  
+**Languages:** English (native), Spanish (working proficiency)  
+**Certifications:** CITI Biomedical Research, TCPS 2, HIPAA Privacy and Security Essentials
+
+## Teaching
+
+**Teaching Assistant, Quantitative Methods of Public Health**, Columbia Mailman (Fall 2026)  
+I lead weekly labs for 17 first-year MPH students, from foundational statistics through regression.
+
+## Full CV
+
+<iframe src="files/Emma_Fanuele_CV.pdf" width="100%" height="900px" style="border:none;"></iframe>

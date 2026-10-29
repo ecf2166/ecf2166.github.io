@@ -316,7 +316,7 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Emma Fanuele</a>
+      <a class="navbar-brand" href="index.html">Home</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -324,17 +324,35 @@ div.tocify {
   <a href="research.html">Research</a>
 </li>
 <li>
-  <a href="publications.html">Publications &amp; Presentations</a>
+  <a href="publications.html">Publications</a>
 </li>
 <li>
-  <a href="cv.html">CV</a>
+  <a href="projects.html">Projects</a>
 </li>
 <li>
   <a href="about.html">About</a>
 </li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    P8105
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="plotly.html">Plotly</a>
+    </li>
+    <li>
+      <a href="dashboard.html">Dashboard</a>
+    </li>
+  </ul>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
+  <a href="cv.html">CV</a>
+</li>
+<li>
   <a href="mailto:ecf2166@cumc.columbia.edu">
     <span class="fa fa-envelope fa-lg"></span>
      
@@ -366,79 +384,65 @@ div.tocify {
 </div>
 
 
+<style>
+.section.level3 > h3 { font-size: 21px; font-weight: 600; margin: 0 0 4px 0; padding-top: 0; }.section.level3 { border-left: 3px solid #18BC9C; padding: 2px 0 2px 18px; margin: 0 0 28px 0; }
+.section.level3 > h3 { font-size: 21px; font-weight: 600; margin: 0 0 4px 0; }
+.section.level3 > h3 + p { font-size: 14px; color: #888; margin-bottom: 10px; }
+.section.level3 p { margin-bottom: 8px; }
+</style>
 <p>My research uses regression modeling and survey methods to study
 suicide prevention, gastroenterology, infectious disease, and population
-health. Selected projects are below, grouped by theme.</p>
+health.</p>
 <div id="suicide-firearms" class="section level2">
 <h2>Suicide &amp; Firearms</h2>
-<div id="firearm-access-and-suicide-rates-a-cross-national-analysis"
+<div id="firearm-access-and-suicide-rates-across-62-countries"
 class="section level3">
-<h3>Firearm Access and Suicide Rates: A Cross-National Analysis</h3>
+<h3>Firearm Access and Suicide Rates Across 62 Countries</h3>
 <p><em>Research Assistant · Columbia University Irving Medical Center ·
-Oct 2025 – Oct 2026</em><br />
-<em>With Dr. Tomer Levy and Dr. Larkin McReynolds</em></p>
-<p><strong>Question:</strong> Is civilian firearm prevalence associated
-with suicide rates across countries, and does the association differ by
-age and sex?</p>
-<p><strong>Data:</strong> WHO mortality and UN demographic data for 62
-countries (2017–2021). This is more than 20,000 sex- and age-stratified
-observations, linked to national firearm ownership indicators.</p>
-<p><strong>Methods:</strong> Negative binomial regression with
-cluster-robust standard errors, plus interaction analyses by age and
-sex. All in R (tidyverse, ggplot2).</p>
-<p><strong>My role:</strong> I ran all of the statistical analyses,
-built a reproducible pipeline to clean, harmonize, and merge the
-datasets, and made the publication figures.</p>
-<p><strong>Output:</strong> Manuscript in preparation. First-author oral
-presentation at the National Research Conference for the Prevention of
-Firearm-Related Harms (Dec 2026).</p>
-<!-- Add a figure once results are public:
-<img src="images/firearm_figure.png" style="width:80%"> -->
+Oct 2025 – Oct 2026 · with Dr. Tomer Levy and Dr. Larkin
+McReynolds</em></p>
+<p>Ran all analyses for a study of whether civilian firearm prevalence
+is associated with firearm suicide rates, and whether the association
+differs by age and sex. Built a reproducible R pipeline linking WHO and
+UN data (20,000+ observations) and fit negative binomial models with
+cluster-robust standard errors.</p>
+<p><strong>Output:</strong> First-author oral presentation, National
+Research Conference for the Prevention of Firearm-Related Harms (Dec
+2026). Manuscript in preparation.</p>
 </div>
 <div id="suicide-methods-across-decades-and-countries"
 class="section level3">
 <h3>Suicide Methods Across Decades and Countries</h3>
 <p><em>Research Assistant · Columbia University Irving Medical Center ·
-Jul 2026 – Present</em><br />
-<em>With Dr. Tomer Levy and Dr. Larkin McReynolds</em></p>
-<p>I’m leading the statistical design of a new cross-national study
-comparing suicide methods across decades and countries.</p>
+Jul 2026 – Present</em></p>
+<p>Leading the statistical design of a new cross-national study of how
+suicide methods have changed over time.</p>
 </div>
 </div>
 <div id="clinical-research-real-world-data" class="section level2">
 <h2>Clinical Research &amp; Real-World Data</h2>
-<div id="incontinence-after-bph-surgery-an-ehr-analysis"
-class="section level3">
-<h3>Incontinence After BPH Surgery: An EHR Analysis</h3>
-<p><em>Research Intern · VA Boston Research Student Summer Institute ·
-May – Aug 2024</em><br />
-<em>In collaboration with Boston Scientific</em></p>
-<p><strong>Question:</strong> How do incontinence rates change after
-surgery for benign prostatic hyperplasia?</p>
-<p><strong>Data:</strong> U.S. electronic health record data.</p>
-<p><strong>My role:</strong> I managed project planning, including
-endpoint design, and drafted the statistical exhibits.</p>
-<p><strong>Findings:</strong> Post-surgical incontinence rates went down
-over time. The project also showed the limits of real-world data for
-determining whether symptoms had resolved.</p>
-</div>
 <div id="treatment-patterns-in-eosinophilic-esophagitis"
 class="section level3">
 <h3>Treatment Patterns in Eosinophilic Esophagitis</h3>
 <p><em>Research Assistant · Columbia University Irving Medical Center ·
-Jan – Aug 2026</em><br />
-<em>With Dr. Sydney Pomenti and Dr. David Katzka</em></p>
-<p><strong>Question:</strong> How do eosinophilic esophagitis experts
-approach patients who are referred to them for consultation?</p>
-<p><strong>Data:</strong> A cross-sectional survey of 52 EoE experts
-covering provider characteristics, referral patterns, perceived causes
-of treatment failure, diagnostic approaches, and prior therapies.</p>
-<p><strong>Methods:</strong> Statistical analysis in R (gtsummary).</p>
-<p><strong>My role:</strong> I finalized the manuscript’s reported
-statistics, tables, and figures.</p>
+Jan – Aug 2026 · with Dr. Sydney Pomenti and Dr. David Katzka</em></p>
+<p>Analyzed a survey of 52 EoE experts on referral patterns, treatment
+failure, and diagnostic approaches in R (gtsummary), and finalized the
+manuscript’s statistics, tables, and figures.</p>
 <p><strong>Output:</strong> Co-author, <em>Alimentary Pharmacology &amp;
 Therapeutics</em> (2026). <a
 href="https://doi.org/10.1111/apt.70951">Read the paper</a></p>
+</div>
+<div id="incontinence-after-bph-surgery-a-real-world-ehr-analysis"
+class="section level3">
+<h3>Incontinence After BPH Surgery: A Real-World EHR Analysis</h3>
+<p><em>Research Intern · VA Boston Research Student Summer Institute ·
+May – Aug 2024 · in collaboration with Boston Scientific</em></p>
+<p>Led project planning, including endpoint design, and drafted
+statistical exhibits for an analysis of incontinence after benign
+prostatic hyperplasia surgery. Rates fell over time, and the project
+showed the limits of real-world data for judging whether symptoms had
+resolved.</p>
 </div>
 </div>
 <div id="infectious-disease-antimicrobial-resistance"
@@ -448,81 +452,86 @@ class="section level2">
 class="section level3">
 <h3>Public Perceptions of Antimicrobial Resistance (Master’s
 Thesis)</h3>
-<p><em>McGill University → Columbia Mailman · May 2023 –
-Present</em><br />
-<em>With Dr. Lysanne Campeau (McGill) and Dr. Lori Lerner (VA
-Boston)</em></p>
-<p><strong>Question:</strong> How aware is the public of the
-antimicrobial resistance crisis, and which everyday behaviors contribute
-to it?</p>
-<p><strong>Data:</strong> A survey I designed and implemented, with 199
-completed responses from the U.S. and Canada.</p>
-<p><strong>Methods:</strong> Linear regression.</p>
-<p><strong>Findings:</strong> Participants were generally unaware of the
-AMR crisis and took few specific actions to avoid resistance.</p>
-<p><strong>Output:</strong> Poster at the 2025 American Urological
-Association Annual Meeting. A manuscript is in preparation, and I’m now
-extending this dataset into my master’s thesis, where I’m leading the
-analysis.</p>
+<p><em>McGill University → Columbia Mailman · May 2023 – Present · with
+Dr. Lysanne Campeau and Dr. Lori Lerner</em></p>
+<p>Designed and fielded a survey of 199 U.S. and Canadian adults. Linear
+regression showed low awareness of the AMR crisis and few protective
+behaviors. I’m now extending the analysis for my master’s thesis.</p>
+<p><strong>Output:</strong> Poster, American Urological Association
+Annual Meeting (2025). Manuscript in preparation.</p>
 </div>
 <div id="tick-borne-disease-in-rural-agricultural-counties"
 class="section level3">
 <h3>Tick-Borne Disease in Rural Agricultural Counties</h3>
 <p><em>Research Intern · Bassett Healthcare Network (NYCAMH) · Jun – Jul
-2026</em><br />
-<em>With Dr. Amanda Roome and Dr. Thelma Mielenz</em></p>
-<p><strong>Data:</strong> New York State Department of Health
-county-level data on tick-borne disease incidence and tick pathogen
-positivity across eight counties.</p>
-<p><strong>Methods:</strong> Visualizations in R, with attention to
-small-denominator reporting problems.</p>
-<p><strong>Other work:</strong> I contributed literature reviews and
-manuscript drafting to a randomized controlled trial of tick-control
-interventions on farms, and made an Alpha-Gal Syndrome resource brochure
-for farmers.</p>
-<p><strong>Output:</strong> Poster at Epidemiology Master’s Student Day,
+2026 · with Dr. Amanda Roome and Dr. Thelma Mielenz</em></p>
+<p>Visualized county-level tick-borne disease incidence and tick
+pathogen positivity across eight New York counties in R, working around
+small-denominator reporting issues. Also contributed to a randomized
+trial of on-farm tick-control interventions.</p>
+<img src="images/tbds.png" style="width:100%; border-radius:6px; margin-top:8px;">
+<p class="text-center" style="font-size:12px; color:#888; margin-top:6px;">
+Tick-borne disease incidence in eight upstate New York counties,
+2014–2024. The year-to-year swings reflect the small populations behind
+each rate. Built in R (ggplot2) from public NYS Department of Health
+data.
+</p>
+<p><strong>Output:</strong> Poster, Epidemiology Master’s Student Day,
 Columbia Mailman (Nov 2026).</p>
 </div>
 </div>
-<div id="population-health-data-survey-methods" class="section level2">
-<h2>Population Health Data &amp; Survey Methods</h2>
+<div id="survey-methods-population-health" class="section level2">
+<h2>Survey Methods &amp; Population Health</h2>
 <div id="small-area-population-estimation-for-nyc-neighborhoods"
 class="section level3">
 <h3>Small-Area Population Estimation for NYC Neighborhoods</h3>
-<p><em>Data Analyst Intern · NYC Department of Health, Bureau of
-Epidemiology Services · Jun – Aug 2026</em></p>
-<p><strong>Question:</strong> Which raking approach gives the most
-reliable demographic estimates for New York City’s Neighborhood
-Tabulation Areas?</p>
-<p><strong>Methods:</strong> Raking in SAS, plus processing and
-validating complex survey data in SAS/SUDAAN (convergence checks and
-missing-data assessment).</p>
-<p><strong>Output:</strong> I presented the methodology comparison and
-my recommended next steps to the Survey Data and Analysis Unit.</p>
-<!-- Add a choropleth map here if the unit says it's shareable -->
+<p><em>Data Analyst Intern · NYC Department of Health · Jun – Aug
+2026</em></p>
+<div class="row">
+<div class="col-sm-8">
+<p>Compared raking methods in SAS for neighborhood-level demographic
+estimates, validated complex survey data in SAS/SUDAAN, and presented
+recommendations to the Survey Data and Analysis Unit.</p>
+<p>A key challenge was non-residential areas like parks, airports, and
+cemeteries, whose very small populations made estimates highly
+variable.</p>
 </div>
-<div id="student-engagement-in-mailmans-core-curriculum-soler"
-class="section level3">
-<h3>Student Engagement in Mailman’s Core Curriculum (SOLER)</h3>
-<p><em>Student Research Worker · Columbia Mailman · Sep 2026 –
-Present</em></p>
-<p>I merge, clean, and analyze de-identified survey data in SPSS
-following the study’s analytic plan. I also produce tables, narrative
-summaries, and visualizations, and contribute to manuscript writing.</p>
+<div class="col-sm-4">
+<img src="images/NTA_areas.png" style="width:100%; max-width:240px; display:block; margin:0 auto;">
+<p class="text-center" style="font-size:12px; color:#888; margin-top:6px;">
+Non-residential NTAs in red. Built in R (sf) from public NYC City
+Planning data.
+</p>
+</div>
+</div>
+</div>
+<div id="water-access-in-an-informal-settlement" class="section level3">
+<h3>Water Access in an Informal Settlement</h3>
+<p><em>Research Intern · TECHO Panamá · Jan – Apr 2024</em></p>
+<p>Designed and ran a 50-question Spanish-language survey and interviews
+(n = 20) on water insecurity in Nueva Luz N°2, Panama. Every respondent
+had water 15 or fewer days a month, and household storage covered only
+about a week of drinking water.</p>
+<p><strong>Output:</strong> Report and community workshop for TECHO.
+Oral presentation at the Smithsonian Tropical Research Institute (2024).
+<a
+href="https://www.mcgill.ca/pfss/files/pfss/fanuele_yang_2024_watercitizenship_arraijan.pdf">Read
+the report (McGill Panama Field Study Semester)</a></p>
 </div>
 </div>
 <div id="other-research" class="section level2">
 <h2>Other Research</h2>
 <ul>
+<li><strong>Study of student engagement in Mailman’s Core
+curriculum</strong> (SOLER, Columbia Mailman, 2026–present): assign
+participants to study groups and post engagement nudges in Canvas for an
+education research study.</li>
 <li><strong>Systematic review protocol on mind-body movement</strong>
-(Tufts University, 2024–2025): I screened 2,000 abstracts and reviewed
-60 full texts. Co-author on the published protocol.</li>
+(Tufts University, 2024–2025): screened 2,000 abstracts and reviewed 60
+full texts. Co-author on the published protocol.</li>
 <li><strong>Mangroves and food security</strong> (McGill honours thesis,
 2024–2025): a literature review of 50+ publications, presented as a
 poster.</li>
-<li><strong>Water access in an informal settlement</strong> (TECHO
-Panamá, 2024): 20 stakeholder interviews on water insecurity and
-citizenship rights.</li>
 </ul>
 </div>
 
@@ -575,7 +584,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2,h3",
+      selectors: "h1,h2",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {

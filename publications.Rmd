@@ -1,0 +1,28 @@
+---
+title: "Publications & Presentations"
+output:
+  html_document:
+    toc: false
+---
+
+## Peer-Reviewed Publications
+
+Pomenti, S. F., Stoffel, E., Choy, A., **Fanuele, E.**, Gonsalves, N., Dellon, E. S., & Katzka, D. A. (2026). Treatment patterns in patients with eosinophilic oesophagitis referred for expert consultation. *Alimentary Pharmacology & Therapeutics*. [doi:10.1111/apt.70951](https://doi.org/10.1111/apt.70951)
+
+Wexler, R. S., Joyce, C. T., Reichman, R., Pereira, C., **Fanuele, E.**, Hurstak, E., Laird, L. D., Lavretsky, H., Wang, C., Saper, R., Alcorn, K. S., Mittman, B. S., & Roseen, E. J. (2026). Determinants of Qi Gong, Tai Chi, and Yoga use for health conditions: A systematic review protocol. *Global Advances in Integrative Medicine and Health*, 15. [doi:10.1177/27536130261417682](https://doi.org/10.1177/27536130261417682)
+
+## Presentations
+
+\* Presenting author
+
+**Fanuele, E.\***, McReynolds, L., Hoven, C., Lin, S., & Levy, T. (2026, December). *National firearm holdings and firearm suicide: A cross-national analysis by age and sex* [Oral presentation]. National Research Conference for the Prevention of Firearm-Related Harms, Baltimore, MD.
+
+**Fanuele, E.\***, & Roome, A. (2026, November). *Rising and emerging tick-borne disease burden in northeastern US rural agricultural counties* [Poster]. Epidemiology Master's Student Day, Columbia University Mailman School of Public Health, New York, NY.
+
+Helrich, S.*, **Fanuele, E.\***, Campeau, L., & Lerner, L. (2025, April). *Attitudes towards antibiotic prescribing and awareness of antimicrobial resistance in Americans and Canadians* [Poster]. American Urological Association Annual Meeting, Las Vegas, NV.
+
+**Fanuele, E.\***, & Melgar-Quiñonez, H. R. (2025, March). *Assessing the influence of the mangrove ecosystem on food security* [Poster]. Bieler School of Environment Honours Symposium, McGill University, Montreal, QC.
+
+**Fanuele, E.\***, & Yang, E.\* (2024, April). *Water and citizenship: Experiences of water access in Nueva Luz N°2, Arraiján* [Oral presentation]. McGill Panama Field Study Semester, Smithsonian Tropical Research Institute, Panama City, Panama.
+
+<!-- Once you can share them, add links under each one, e.g. [Poster (PDF)](files/tickborne_poster.pdf) -->

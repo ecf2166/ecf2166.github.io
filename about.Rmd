@@ -1,16 +1,63 @@
 ---
-title: "About"
-output: 
+title: "Beyond Research"
+output:
   html_document:
-    toc: true
-    toc_float: true
-    theme: cerulean
+    toc: false
 ---
 
-# About this page
+<style>
+.photo { width: 100%; object-fit: cover; border-radius: 8px; }
+.tall { aspect-ratio: 2 / 3; }
+.med { aspect-ratio: 3 / 4; }
+.wide { aspect-ratio: 4 / 3; }
+.top { object-position: top; }
+.left { object-position: left; }
+.photo-row { margin: 20px 0 25px 0; }
+</style>
 
-This page is about how easy it is to make websites!
+Outside of research, I have volunteered with Pothawira, a clinic, school, and orphanage in Malawi, since 2018. In 2023 I climbed Mount Kilimanjaro to raise money for the clinic's surgical center. I also cheered competitively for 12 years and coached McGill's Level 4 team, fueling my excitement about teaching. At Columbia, I am on the executive board for CIPHER, a club involved with volunteering in the Washington Heights community and spreading public health literacy. I also run the Mailman Jewish Student Association as co-president.
 
-It was written by Jeff Goldsmith.
+<div class="row photo-row">
+<div class="col-sm-4 col-sm-offset-2">
+<img src="images/kili.JPG" class="photo tall">
+<p class="text-center"><small>Uhuru Peak, raising funds for Pothawira's surgical center (2023)</small></p>
+</div>
+<div class="col-sm-4">
+<img src="images/cheer_grad.JPG" class="photo tall top">
+<p class="text-center"><small>One last stunt before graduation (2025)</small></p>
+</div>
+</div>
 
-To go home, click [here](index.html)
+Travelling has always been a big passion of mine. During my time at McGill, I completed two field study semesters: one in Kenya and Tanzania in 2023 and one in Panama in 2024. Though neither of these programs was necessarily health-related, they emphasized how much health depends on one's surroundings, and I was thrilled at the opportunity to weave field work into my undergraduate studies.
+
+<div class="row photo-row">
+<div class="col-sm-4">
+<img src="images/forest_density.JPG" class="photo med left">
+<p class="text-center"><small>Measuring forest density in Panama (2024)</small></p>
+</div>
+<div class="col-sm-4">
+<img src="images/lamb.jpg" class="photo med top">
+<p class="text-center"><small>Homestay in the Maasai Mara (2023)</small></p>
+</div>
+<div class="col-sm-4">
+<img src="images/kenya_waterfall.jpg" class="photo med">
+<p class="text-center"><small>Studying macroinvertebrates at Mount Kenya (2023)</small></p>
+</div>
+</div>
+
+I am originally from the South Shore of Massachusetts, just outside Boston. I have my advanced PADI scuba diving certification, and becoming a Divemaster is one of my dreams! I have a rescue dog named Enzo who I will make sure to weave into any conversation. For anyone curious, he was found as a stray and brought into the NYCACC public shelter, and he is estimated to be about 8 years old and is a Yorkie-Pekingese mix (courtesy of the Embark DNA tests).
+
+<div class="row photo-row">
+<div class="col-sm-4">
+<img src="images/nyc_roof.jpeg" class="photo med" style="object-position: 62% center;">
+<p class="text-center"><small>Calling NYC home for now</small></p>
+</div>
+<div class="col-sm-4">
+<img src="images/diving.jpeg" class="photo med left">
+<p class="text-center"><small>Shore dive in Bonaire</small></p>
+</div>
+<div class="col-sm-4">
+<img src="images/IMG_2869.jpeg" class="photo med">
+<p class="text-center"><small>Enzo :)</small></p>
+</div>
+</div>
