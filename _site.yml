@@ -6,19 +6,17 @@ navbar:
       href: research.html
     - text: "Publications"
       href: publications.html
-    - text: "Projects"
-      href: projects.html
+    #- text: "Projects"
+      #href: projects.html
     - text: "About"
       href: about.html
     - text: "P8105"
       menu:
-        - text: "Plotly"
-          href: plotly.html
-        - text: "Dashboard"
-          href: dashboard.html
+        - text: "NY NOAA"
+          href: nynoaa.html
   right:
     - text: "CV"
-      href: cv.html
+      href: files/CV_Emma_Fanuele.pdf
     - icon: fa-envelope fa-lg
       href: mailto:ecf2166@cumc.columbia.edu
     - icon: fa-github fa-lg

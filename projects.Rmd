@@ -1,0 +1,32 @@
+---
+title: "Projects"
+subtitle: "Selected analyses from coursework"
+output:
+  html_document:
+    toc: false
+---
+
+<style>
+.section.level3 { border-left: 3px solid #18BC9C; padding: 2px 0 2px 18px; margin: 25px 0 28px 0; }
+.section.level3 > h3 { font-size: 21px; font-weight: 600; margin: 0 0 4px 0; padding-top: 0; }
+.section.level3 > h3 + p { font-size: 14px; color: #888; margin-bottom: 10px; }
+.section.level3 p { margin-bottom: 8px; }
+</style>
+
+### Milk Consumption and Dietary Calcium Intake in U.S. Adults
+*Applications of Epidemiologic Research Methods · Columbia Mailman · Spring 2026 · SAS*
+
+Is the type of milk adults drink associated with how much calcium they get? Using NHANES 2017–March 2020 data (n = 4,603 adults ages 18–59), I compared total dietary calcium across cow milk, non-dairy milk, and non-milk drinkers with crude and adjusted linear regression, controlling for age, sex, income-to-poverty ratio, and physical activity. The code pulls and merges four NHANES files directly from the CDC with PROC HTTP, so it runs end to end with no manual downloads.
+
+**Findings:** After adjustment, both cow milk drinkers (β = 138 mg, 95% CI 96–180) and non-dairy milk drinkers (β = 138 mg, 95% CI 71–204) consumed more calcium than non-milk drinkers, and results held after excluding extreme intakes. Calcium came from a single-day recall, and estimates are unweighted, so they describe the sample rather than the U.S. population.
+
+[View the code on GitHub](YOUR_LINK)
+
+### Cross-Validated Estimation in Surveys
+*Sampling Theory & Applications · McGill University · April 2025 · R · with Montserrat Rodríguez Yap*
+
+Does choosing a survey estimator's working model by cross-validation produce a good estimator? In a Monte Carlo simulation (1,000 replicates) on a simulated population of 1,000 students, we used 5-fold cross-validation to choose models for three estimators: model-assisted estimation, imputation for nonresponse, and inverse probability weighting.
+
+**Findings:** Cross-validation picked linear regression in 93% of replicates for model-assisted estimation and 97% for imputation, which matches the linear model the data were generated from.
+
+[Read the report (PDF)](files/Assignment_4.pdf)

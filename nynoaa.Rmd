@@ -1,0 +1,85 @@
+---
+title: "NY NOAA"
+subtitle: "Using plotly with the NY NOAA dataset for P8105 Homework 4"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: flatly
+    navbar:
+      - { title: "Home", href: "index.html", align: left }
+---
+
+For this assignment, I used weather data in NY from the National Oceanic and Atmospheric Association (NOAA) of the National Centers for Environmental Information (NCEI). This data includes the GHCN (Global Historical Climatology Network)-Daily database of summary statistics from weather stations around the world. For the purposes of this assignment, I used the NY state-level data provided. This dataset has five core variables for all New York state weather stations from January 1, 1981 through December 31, 2010.
+
+```{r setup, include = F}
+library(tidyverse)
+library(plotly)
+library(flexdashboard)
+
+set.seed(42)
+
+knitr::opts_chunk$set(echo=FALSE)
+
+nynoaa = read_csv("data/nynoaadat.csv")
+
+# As this is a huge dataset and plotly cannot handle this many points, I will be taking a random sample of 10,000 of the rows in this dataset with no NA values
+
+nynoaa = nynoaa |> 
+  mutate(
+    tmax = as.numeric(tmax),
+    tmin = as.numeric(tmin),
+    snow = as.numeric(snow),
+    snwd = as.numeric(snwd),
+    prcp = as.numeric(prcp)
+  ) |> 
+  drop_na() |> 
+  slice_sample(n = 10000)
+
+#According to the codebook, precipitation is reported in tenths of mm, so we need to divide by 10; tmax and tmin are also in tenths of degrees C
+
+nynoaa = 
+  nynoaa |> 
+  mutate(
+    prcp = prcp/10,
+    tmax = tmax/10,
+    tmin = tmin/10
+  )
+```
+
+Column {data-width=600}
+-----------------------------------------------------------------------
+
+### Maximum temperature over time
+```{r}
+nynoaa |> 
+  mutate(
+    month = lubridate::month(date, label = TRUE),
+    text_label = str_c("Date: ", date, "\nMaximum Temperature: ", tmax, " °C")) |> 
+  plot_ly(x = ~date, y = ~tmax, color = ~month, colors = "viridis", type = "scatter", text = ~text_label, mode = "markers", alpha = 0.5)
+```
+
+
+Column {data-width=400}
+-----------------------------------------------------------------------
+
+### Snowfall on snowy days, by year
+```{r}
+nynoaa |> 
+  filter(snow > 0) |> 
+  mutate(year = factor(lubridate::year(date)),
+         text_label = str_c("Year: ", year, "\nSnowfall: ", snow, "mm")) |> 
+  plot_ly(x = ~year, y = ~snow, color = ~year, type = "violin", text = ~text_label, colors = "viridis")
+```
+
+### Average maximum temperature by month and year
+```{r}
+nynoaa |> 
+  mutate(
+    month = lubridate::month(date, label = TRUE),
+    temp_range = tmax - tmin) |> 
+  plot_ly(x = ~month, y = ~temp_range, color = ~month, type = "box", colors = "viridis") |> 
+  layout(xaxis = list(title = "Month"),
+         yaxis = list(title = "Daily temperature range, tmax − tmin (°C)"))
+```
+
