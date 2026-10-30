@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Research</title>
+
+<script src="site_libs/header-attrs-2.32/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="research.html">Research</a>
+</li>
+<li>
+  <a href="publications.html">Publications</a>
+</li>
+<li>
+  <a href="about.html">About</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    P8105
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="nynoaa.html">NY NOAA</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="files/CV_Emma_Fanuele.pdf">CV</a>
+</li>
+<li>
+  <a href="mailto:ecf2166@cumc.columbia.edu">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/ecf2166">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/emma-fanuele/">
+    <span class="fa fa-linkedin fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Research</h1>
+
+</div>
+
+
+<style>
+.section.level3 > h3 { font-size: 21px; font-weight: 600; margin: 0 0 4px 0; padding-top: 0; }.section.level3 { border-left: 3px solid #18BC9C; padding: 2px 0 2px 18px; margin: 0 0 28px 0; }
+.section.level3 > h3 { font-size: 21px; font-weight: 600; margin: 0 0 4px 0; }
+.section.level3 > h3 + p { font-size: 14px; color: #888; margin-bottom: 10px; }
+.section.level3 p { margin-bottom: 8px; }
+</style>
+<p>My research uses regression modeling and survey methods to study
+suicide prevention, gastroenterology, infectious disease, and population
+health.</p>
+<div id="suicide-firearms" class="section level2">
+<h2>Suicide &amp; Firearms</h2>
+<div id="firearm-access-and-suicide-rates-across-62-countries"
+class="section level3">
+<h3>Firearm Access and Suicide Rates Across 62 Countries</h3>
+<p><em>Research Assistant · Columbia University Irving Medical Center ·
+Oct 2025 – Oct 2026 · with Dr. Tomer Levy and Dr. Larkin
+McReynolds</em></p>
+<p>Ran all analyses for a study of whether civilian firearm prevalence
+is associated with firearm suicide rates, and whether the association
+differs by age and sex. Built a reproducible R pipeline linking WHO and
+UN data (20,000+ observations) and fit negative binomial models with
+cluster-robust standard errors.</p>
+<p><strong>Output:</strong> First-author oral presentation, National
+Research Conference for the Prevention of Firearm-Related Harms (Dec
+2026). Manuscript in preparation.</p>
+</div>
+<div id="suicide-methods-across-decades-and-countries"
+class="section level3">
+<h3>Suicide Methods Across Decades and Countries</h3>
+<p><em>Research Assistant · Columbia University Irving Medical Center ·
+Jul 2026 – Present</em></p>
+<p>Leading the statistical design of a new cross-national study of how
+suicide methods have changed over time.</p>
+</div>
+</div>
+<div id="clinical-research-real-world-data" class="section level2">
+<h2>Clinical Research &amp; Real-World Data</h2>
+<div id="treatment-patterns-in-eosinophilic-esophagitis"
+class="section level3">
+<h3>Treatment Patterns in Eosinophilic Esophagitis</h3>
+<p><em>Research Assistant · Columbia University Irving Medical Center ·
+Jan – Aug 2026 · with Dr. Sydney Pomenti and Dr. David Katzka</em></p>
+<p>Analyzed a survey of 52 EoE experts on referral patterns, treatment
+failure, and diagnostic approaches in R (gtsummary), and finalized the
+manuscript’s statistics, tables, and figures.</p>
+<p><strong>Output:</strong> Co-author, <em>Alimentary Pharmacology &amp;
+Therapeutics</em> (2026). <a
+href="https://doi.org/10.1111/apt.70951">Read the paper</a></p>
+</div>
+<div id="incontinence-after-bph-surgery-a-real-world-ehr-analysis"
+class="section level3">
+<h3>Incontinence After BPH Surgery: A Real-World EHR Analysis</h3>
+<p><em>Research Intern · VA Boston Research Student Summer Institute ·
+May – Aug 2024 · in collaboration with Boston Scientific</em></p>
+<p>Led project planning, including endpoint design, and drafted
+statistical exhibits for an analysis of incontinence after benign
+prostatic hyperplasia surgery. Rates fell over time, and the project
+showed the limits of real-world data for judging whether symptoms had
+resolved.</p>
+</div>
+</div>
+<div id="infectious-disease-antimicrobial-resistance"
+class="section level2">
+<h2>Infectious Disease &amp; Antimicrobial Resistance</h2>
+<div id="public-perceptions-of-antimicrobial-resistance-masters-thesis"
+class="section level3">
+<h3>Public Perceptions of Antimicrobial Resistance (Master’s
+Thesis)</h3>
+<p><em>McGill University → Columbia Mailman · May 2023 – Present · with
+Dr. Lysanne Campeau and Dr. Lori Lerner</em></p>
+<p>Designed and fielded a survey of 199 U.S. and Canadian adults. Linear
+regression showed low awareness of the AMR crisis and few protective
+behaviors. I’m now extending the analysis for my master’s thesis.</p>
+<p><strong>Output:</strong> Poster, American Urological Association
+Annual Meeting (2025). Manuscript in preparation.</p>
+</div>
+<div id="tick-borne-disease-in-rural-agricultural-counties"
+class="section level3">
+<h3>Tick-Borne Disease in Rural Agricultural Counties</h3>
+<p><em>Research Intern · Bassett Healthcare Network (NYCAMH) · Jun – Jul
+2026 · with Dr. Amanda Roome and Dr. Thelma Mielenz</em></p>
+<p>Visualized county-level tick-borne disease incidence and tick
+pathogen positivity across eight New York counties in R, working around
+small-denominator reporting issues. Also contributed to a randomized
+trial of on-farm tick-control interventions.</p>
+<img src="images/tbds.png" style="width:100%; border-radius:6px; margin-top:8px;">
+<p class="text-center" style="font-size:12px; color:#888; margin-top:6px;">
+Tick-borne disease incidence in eight upstate New York counties,
+2014–2024. The year-to-year swings reflect the small populations behind
+each rate. Built in R (ggplot2) from public NYS Department of Health
+data.
+</p>
+<p><strong>Output:</strong> Poster, Epidemiology Master’s Student Day,
+Columbia Mailman (Nov 2026).</p>
+</div>
+</div>
+<div id="survey-methods-population-health" class="section level2">
+<h2>Survey Methods &amp; Population Health</h2>
+<div id="small-area-population-estimation-for-nyc-neighborhoods"
+class="section level3">
+<h3>Small-Area Population Estimation for NYC Neighborhoods</h3>
+<p><em>Data Analyst Intern · NYC Department of Health · Jun – Aug
+2026</em></p>
+<div class="row">
+<div class="col-sm-8">
+<p>Compared raking methods in SAS for neighborhood-level demographic
+estimates, validated complex survey data in SAS/SUDAAN, and presented
+recommendations to the Survey Data and Analysis Unit.</p>
+<p>A key challenge was non-residential areas like parks, airports, and
+cemeteries, whose very small populations made estimates highly
+variable.</p>
+</div>
+<div class="col-sm-4">
+<img src="images/NTA_areas.png" style="width:100%; max-width:240px; display:block; margin:0 auto;">
+<p class="text-center" style="font-size:12px; color:#888; margin-top:6px;">
+Non-residential NTAs in red. Built in R (sf) from public NYC City
+Planning data.
+</p>
+</div>
+</div>
+</div>
+<div id="water-access-in-an-informal-settlement" class="section level3">
+<h3>Water Access in an Informal Settlement</h3>
+<p><em>Research Intern · TECHO Panamá · Jan – Apr 2024</em></p>
+<p>Designed and ran a 50-question Spanish-language survey and interviews
+(n = 20) on water insecurity in Nueva Luz N°2, Panama. Every respondent
+had water 15 or fewer days a month, and household storage covered only
+about a week of drinking water.</p>
+<p><strong>Output:</strong> Report and community workshop for TECHO.
+Oral presentation at the Smithsonian Tropical Research Institute (2024).
+<a
+href="https://www.mcgill.ca/pfss/files/pfss/fanuele_yang_2024_watercitizenship_arraijan.pdf">Read
+the report (McGill Panama Field Study Semester)</a></p>
+</div>
+</div>
+<div id="other-research" class="section level2">
+<h2>Other Research</h2>
+<ul>
+<li><strong>Study of student engagement in Mailman’s Core
+curriculum</strong> (SOLER, Columbia Mailman, 2026–present): assign
+participants to study groups and post engagement nudges in Canvas for an
+education research study.</li>
+<li><strong>Systematic review protocol on mind-body movement</strong>
+(Tufts University, 2024–2025): screened 2,000 abstracts and reviewed 60
+full texts. Co-author on the published protocol.</li>
+<li><strong>Mangroves and food security</strong> (McGill honours thesis,
+2024–2025): a literature review of 50+ publications, presented as a
+poster.</li>
+</ul>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
